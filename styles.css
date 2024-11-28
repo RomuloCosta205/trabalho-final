@@ -1,0 +1,96 @@
+/* Resetando margens e padding para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo um estilo básico para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Layout com grid */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px;
+}
+
+/* Para telas menores, como tablets e dispositivos móveis */
+@media (max-width: 1024px) {
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; /* 1 coluna para dispositivos móveis */
+    }
+}
+
+/* Layout com flexbox */
+.flex-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1 1 30%; /* 3 itens por linha no desktop */
+}
+
+/* Para telas menores */
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 100%; /* Itens ocupam toda a largura em dispositivos móveis */
+    }
+}
+
+/* Estilos adicionais */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* Títulos e textos */
+h2,h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.fim{
+    background-color: gainsboro;
+}
+nav{
+    background-color: goldenrod;
+    border-radius: 10px;
+    justify-content: space-around;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+a:hover{
+    color: green;
+
+}

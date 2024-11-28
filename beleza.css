@@ -1,0 +1,25 @@
+ { margin: 0; preenchimento: 0; dimensionamento de caixa: caixa de borda; família de fontes: Arial,sans-serif; } 
+ body { background-color: #f4f4f4; color: #333; } 
+ /* Container principal com Flexbox */ 
+ .container { display: flex; flex-direction: column; justify-content: flex-start; align-items: center; margin: 20px; } 
+ /* Cabeçalho */ 
+ header { text-align: center; margin-bottom: 30px; } 
+ header h1 { font-size: 2.5em; color: #333; }
+  /* Seção de introdução */ .intro { max-width: 900px; text-align: justify; margin-bottom: 40px; } 
+  /* Seção de objetivos */ .objectives { max-width: 900px; margin-bottom: 40px; }
+   .objectives h2 { font-size: 1.8em; margin-bottom: 20px; } 
+   .objectives ul { list-style-type: disc; margin-left: 20px; }
+    /* Seção de papéis: Historiadores e Educadores */ 
+    .roles { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 900px; margin-bottom: 40px; } 
+    .role { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } 
+    .role h3 { font-size: 1.5em; margin-bottom: 15px; } 
+    /* Consultas de mídia para responsividade */ 
+    @media (max-width: 768px) { .container { margin: 10px; } 
+    cabeçalho h1 { tamanho da fonte: 2em; } .intro { margem inferior: 20px; } 
+    .objectives h2 { tamanho da fonte: 1,6em; }
+     .roles { colunas do modelo de grade: 1fr; } 
+     .role { margem inferior: 20px; } } @media (largura máxima: 480px) { 
+        .container { margem: 5px; } cabeçalho h1 { tamanho da fonte: 1,6em; }
+         .intro { tamanho da fonte: 0,95em; } .objectives h2 { tamanho da fonte: 1,4em; } 
+         .objectives ul { tamanho da fonte: 0,9em; } .role h3 { tamanho da fonte: 1,2em; } } ``` 
+         ### Explicação do Layout: 1. **Flexbox**:  utiliza **Flexbox** para estruturar os elementos de forma vertical, com os itens principais sendo alinhados no centro da página. O Flexbox é útil para manter um layout, especialmente flexível para diferentes tamanhos de tela. 2. **#fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } .role h3 { font-size: 1.5em; margin-bottom: 15px; } /* Consultas de mídia para responsividade */ @media (max-width: 768px) { .container { margin: 10px; } header h1 { font-size: 2em; } .intro { margin-bottom: 20px; } .objectives h2 { font-size: 1.6em; } .roles { grid-template-columns: 1fr; } .role { margin-bottom: 20px; } } @media (max-width: 480px) { .container { margin: 5px; } cabeçalho h1 {tamanho da fonte: 1,6em; } .intro { tamanho da fonte: 0,95em; } .objectives h2 { tamanho da fonte: 1,4em; } .objectives ul {tamanho da fonte: 0,9em; } .role h3 {tamanho da fonte: 1,2em; } } ``` ### Explicação do Layout: 1. **Flexbox**: - A classe `.container` utiliza **Flexbox** para estruturar os elementos de forma vertical, com os itens principais sendo alinhados no centro da página. O Flexbox é útil para manter um layout, especialmente flexível para diferentes tamanhos de tela. 2. **#fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } .role h3 { font-size: 1.5em; margin-bottom: 15px; } /* Consultas de mídia para responsividade */ @media (max-width: 768px) { .container { margin: 10px; } header h1 { font-size: 2em; } .intro { margin-bottom: 20px; } .objectives h2 { font-size: 1.6em; } .roles { grid-template-columns: 1fr; } .role { margin-bottom: 20px; } } @media (max-width: 480px) { .container { margin: 5px; } cabeçalho h1 {tamanho da fonte: 1,6em; } .intro { tamanho da fonte: 0,95em; } .objectives h2 { tamanho da fonte: 1,4em; } .objectives ul {tamanho da fonte: 0,9em; } .role h3 {tamanho da fonte: 1,2em; } }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - História do Brasil</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário: Opinião sobre a História do Brasil</h1>
+        </header>
+
+        <section>
+            <p>Por favor, preencha o formulário abaixo para nos contar sua opinião sobre a História do Brasil e seus eventos importantes.</p>
+        </section>
+
+        <form action="#" method="POST" class="history-form">
+            <div class="form-group">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Seu Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email">
+            </div>
+
+            <div class="form-group">
+                <label for="evento">Qual evento histórico você considera mais importante?</label>
+                <select id="evento" name="evento">
+                    <option value="periodo_pre_cabralino">Período Pré-Cabralino</option>
+                    <option value="ciclo_pau_brasil">Ciclo do Pau-Brasil</option>
+                    <option value="abolicao_escravidao">Abolição da Escravidão</option>
+                    <option value="era_vargas">Era Vargas</option>
+                    <option value="republica_populista">República Populista ou Quarta República</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentários:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escreva seus comentários sobre o evento histórico escolhido"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="preferencia">Como você prefere aprender sobre História?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="preferencia" value="leitura"> Leitura de livros</label>
+                    <label><input type="radio" name="preferencia" value="documentarios"> Documentários</label>
+                    <label><input type="radio" name="preferencia" value="aulas"> Aulas presenciais</label>
+                    <label><input type="radio" name="preferencia" value="online"> Aulas online</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Enviar Respostas</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
